@@ -1,0 +1,19 @@
+What is it?
+    This is a minimal proxyServer written in Python to test what I learned from Computer Networking from Kurose and Ross. 
+    It was not based on their skeleton, I thought of it myself. 
+    
+    I also divided the functions minimally, just enough to have clarity on the parts.
+    
+    It handles one connection at a time and implements the GET method, stores locally pages visited before. I only handle the simplest case, a URL in the format www.example.com/file.extension
+    
+
+Next Future Steps:
+    1. Make it multithread
+    2. Exit gracefully
+    3. Use https
+    4. Treat other url formats
+    
+How to test it?
+    1. If you want to test in the same machine, you need to run: > python3 proxyServer.py 
+    2. Then you can call > curl http://localhost:8888/www.example.com/index.html
+    I've used port 8888, that's why we see it here
